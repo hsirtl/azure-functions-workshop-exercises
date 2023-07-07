@@ -2,6 +2,8 @@
 
 ## Create your first Azure Function (PowerShell)
 
+### Create a local Functions project
+
 1. Run the ```func init``` command, as follows, to create a functions project in a folder named LocalFunctionProj with the specified runtime:
 
     ```powershell
@@ -20,14 +22,14 @@
     func new --name HttpExample --template "HTTP trigger"
     ```
 
-## Examine the file contents
+### Examine the file contents
 
 1. Navigate to the ```LocalFunctionProj``` folder and open the ```HttpExample``` folder. You should see the following files:
 
     - ```function.json```: This file describes the function bindings, triggers, and other configuration settings.
     - ```run.ps1```: This is the main function script.
 
-## Run the function locally
+### Run the function locally
 
 1. Run the function locally by using the following command:
 
@@ -39,7 +41,7 @@
 
     ![Output of the func start command.](images/ch1-func-start-output.png)
 
-## Test the function
+### Test the function
 
 1. Open a browser with the URL [http://localhost:7071/api/HttpExample?name=AzureFunctions](http://localhost:7071/api/HttpExample?name=AzureFunctions) or a new PowerShell window and run the following command to test the function:
 

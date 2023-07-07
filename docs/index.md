@@ -10,8 +10,11 @@ Welcome to the Azure Functions Workshop. The page that you are currently reading
   - The Azure [Az PowerShell module](https://learn.microsoft.com/powershell/azure/install-azure-powershell) version 9.4.0 or later.
   - [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli) version 2.4 or later.
 - The [.NET 6.0 SDK](https://dotnet.microsoft.com/download)
-- [PowerShell 7.2](https://learn.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows)
+- [PowerShell 7.2](https://learn.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows
+- [Azurite emulator](https://learn.microsoft.com/azure/storage/common/storage-use-azurite) for local Azure Storage development
+- Optional: [Visual Studio Code](https://code.visualstudio.com/download) with the [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) installed.
 
 ## Challenges
 
 - [Challenge 1: Create your first Azure Function (PowerShell)](challenge-01.md)
+- [Challenge 2: Create a timer triggered Azure Function (PowerShell)](challenge-02.md)
