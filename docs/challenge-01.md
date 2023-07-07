@@ -14,15 +14,39 @@
     cd LocalFunctionProj
     ```
 
-1. Add a function to your project by using the following command, where the --name argument is the unique name of your function (HttpExample) and the --template argument specifies the function's trigger (HTTP).
+1. Add a function to your project by using the following command, where the ```--name``` argument is the unique name of your function (HttpExample) and the ```--template``` argument specifies the function's trigger (HTTP).
 
     ```powershell
     func new --name HttpExample --template "HTTP trigger"
     ```
 
-### Load a sample template and make some edits 
+## Examine the file contents
 
-1. Click on _Sample Template_.
-1. Select the template ```microsoft.storage/storage-account-create/main.bicep```
-1. Remove some ot the allowed values for ```storageAccountType``` and verify the effect on the compiled ARM template.
-1. Optional: make further changes and verify their effect on the ARM template.
+1. Navigate to the ```LocalFunctionProj``` folder and open the ```HttpExample``` folder. You should see the following files:
+
+    - ```function.json```: This file describes the function bindings, triggers, and other configuration settings.
+    - ```run.ps1```: This is the main function script.
+
+## Run the function locally
+
+1. Run the function locally by using the following command:
+
+    ```powershell
+    func start
+    ```
+
+    You should see an output similar to the following:
+
+    ![Output of the func start command.](images/ch1-func-start-output.png)
+
+## Test the function
+
+1. Open a browser with the URL [http://localhost:7071/api/HttpExample?name=AzureFunctions](http://localhost:7071/api/HttpExample?name=AzureFunctions) or a new PowerShell window and run the following command to test the function:
+
+    ```powershell
+    Invoke-WebRequest -Uri http://localhost:7071/api/HttpExample?name=AzureFunctions
+    ```
+
+    You should see an output similar to the following:
+
+    ![Output of the Invoke-WebRequest command.](images/ch1-invoke-web-request-output.png)
