@@ -1,10 +1,24 @@
 # Challenge 1
 
-## Explore the Azure Bicep Playground
+## Create your first Azure Function (PowerShell)
 
-### Open the Azure Playground website
+1. Run the ```func init``` command, as follows, to create a functions project in a folder named LocalFunctionProj with the specified runtime:
 
-1. In a browser open the URL [https://aka.ms/bicepdemo](https://aka.ms/bicepdemo).
+    ```powershell
+    func init LocalFunctionProj --worker-runtime powershell
+    ```
+
+1. Navigate into the project folder:
+
+    ```powershell
+    cd LocalFunctionProj
+    ```
+
+1. Add a function to your project by using the following command, where the --name argument is the unique name of your function (HttpExample) and the --template argument specifies the function's trigger (HTTP).
+
+    ```powershell
+    func new --name HttpExample --template "HTTP trigger"
+    ```
 
 ### Load a sample template and make some edits 
 
