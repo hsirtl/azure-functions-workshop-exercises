@@ -14,4 +14,4 @@ Welcome to the Azure Functions Workshop. The page that you are currently reading
 
 ## Challenges
 
-- [Challenge 1: Explore the Azure Bicep Playground](challenge-01.md)
+- [Challenge 1: Create your first Azure Function (PowerShell)](challenge-01.md)
